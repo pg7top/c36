@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyQuiz Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+  apiKey: "AIzaSyB7SJxLnb2kuoVu6pV-7hk1GcpfhaGgQYI",
+  authDomain: "balloon-ed638.firebaseapp.com",
+  databaseURL: "https://balloon-ed638-default-rtdb.firebaseio.com",
+  projectId: "balloon-ed638",
+  storageBucket: "balloon-ed638.appspot.com",
+  messagingSenderId: "221196167052",
+  appId: "1:221196167052:web:6494824d0a63f9b5dc58a9",
+  measurementId: "G-ZE4GYHNMZP"
+};
+
+
+      //       const firebaseConfig = {
+//   apiKey: "AIzaSyAGEzm5DdV8LJ2lk8ih4EhgtSLoo_9siN0",
+//   authDomain: "bolao-ce0d0.firebaseapp.com",
+//   databaseURL: "https://bolao-ce0d0-default-rtdb.firebaseio.com",
+//   projectId: "bolao-ce0d0",
+//   storageBucket: "bolao-ce0d0.appspot.com",
+//   messagingSenderId: "799622882588",
+//   appId: "1:799622882588:web:71434278982395a194c6d9",
+//   measurementId: "G-56E6W5K44S"
+// };
+
+
+      //       const firebaseConfig = {
+//   apiKey: "AIzaSyDYUpMc905SjHNbqK0bDRkCYuIDQdJr9KY",
+//   authDomain: "air-ballon-accf8.firebaseapp.com",
+//   databaseURL: "https://air-ballon-accf8-default-rtdb.firebaseio.com",
+//   projectId: "air-ballon-accf8",
+//   storageBucket: "air-ballon-accf8.appspot.com",
+//   messagingSenderId: "496456564637",
+//   appId: "1:496456564637:web:ca762269af05f8fef8b974",
+//   measurementId: "G-HFLMKN6N16"
+// };
+
+
+      //       const firebaseConfig = {
+//   apiKey: "AIzaSyDYUpMc905SjHNbqK0bDRkCYuIDQdJr9KY",
+//   authDomain: "air-ballon-accf8.firebaseapp.com",
+//   databaseURL: "https://air-ballon-accf8-default-rtdb.firebaseio.com",
+//   projectId: "air-ballon-accf8",
+//   storageBucket: "air-ballon-accf8.appspot.com",
+//   messagingSenderId: "496456564637",
+//   appId: "1:496456564637:web:ca762269af05f8fef8b974",
+//   measurementId: "G-HFLMKN6N16"
+// };
+
+      //       const firebaseConfig = {
+//   apiKey: "AIzaSyDYUpMc905SjHNbqK0bDRkCYuIDQdJr9KY",
+//   authDomain: "air-ballon-accf8.firebaseapp.com",
+//   databaseURL: "https://air-ballon-accf8-default-rtdb.firebaseio.com",
+//   projectId: "air-ballon-accf8",
+//   storageBucket: "air-ballon-accf8.appspot.com",
+//   messagingSenderId: "496456564637",
+//   appId: "1:496456564637:web:ca762269af05f8fef8b974",
+//   measurementId: "G-HFLMKN6N16"
+// };
+      
+      
+      // const firebaseConfig = {
+      //   apiKey: "AIzaSyBYSW1t1pYWWUdRSgrYwXq3g4HDRRY2wNI",
+      //   authDomain: "balao-a1148.firebaseapp.com",
+      //   databaseURL: "https://balao-a1148-default-rtdb.firebaseio.com",
+      //   projectId: "balao-a1148",
+      //   storageBucket: "balao-a1148.appspot.com",
+      //   messagingSenderId: "77093296361",
+      //   appId: "1:77093296361:web:394f89b91620a14292b878"
+      // };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+</html>
